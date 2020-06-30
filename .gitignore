@@ -1,0 +1,7 @@
+react-client/node_modules/
+react-client/build/
+server/flightApi/__pycache__/
+server/flightOptimizer/__pycache__/
+server/static
+.vscode/
+
