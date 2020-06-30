@@ -14,7 +14,8 @@ def flight_info(request):
     departure_city = request.GET.get("departure")
     arrival_cities = request.GET.get("arrival").split(',')
     obj = FlightOptimizer()
-    dep_airp, arrival_airp = obj.get_main_airport_of_city(departure_city, arrival_cities)
+    airport_response = obj.get_main_airport_of_city(departure_city, arrival_cities)
+    dep_airp, arrival_airp = airport_response["data"]
     data = obj.get_best_flight_price(dep_airp, arrival_airp)
     data["Access-Control-Allow-Origin"] = "*"
     return Response(data)
