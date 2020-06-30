@@ -1,6 +1,6 @@
 # Part 1 
 
-To see the script itself, see **flightApi/flightOptimizer.py**. The file will contain class definition with the following methods: 
+To see the script itself, see **server/flightApi/flightOptimizer.py**. The file will contain class definition with the following methods: 
 2 helper methods: 
 ```handle_error() ``` returns following response 
 ``` 
@@ -48,16 +48,17 @@ To test the script,
 # Part 2 
 This part includes a minimal interface where a user can input data and see the table with flight information with cheapest flight by price/distance ratio. 
 It was built using **Django Restframework** on the backend and **React.js** on the frontend. 
-Backend's folders and files include **flightOptimizer**, **flightApi**, **requirements.txt, manage.py** Other folders and files belong to frontend part. 
+ 
 
 To see the interface, go to https://flight-optimizer-react.herokuapp.com/ 
 
 To run this interface locally on your machine, do the following: 
 1. Clone the project.
-2. Create virtual environment and install all python and django dependencies by running ```pip install -r requirements.txt```
-3. Install all node.js and react.js dependencies by running ```npm i```
-4. Build front-end part with ```npm run build```. 
-5. Run ```python manage.py runserver``` and head to ```http://127.0.0.1:8000/```
+2. Go to ```react-client``` folder and install all node.js and react.js dependencies by running ```npm i```
+3. Build front-end part with ```npm run build```. 
+4. Create virtual environment. 
+5. Go to ```server``` folder and install all python and django dependencies by running ```pip install -r requirements.txt```
+6. Run ```python manage.py runserver``` and head to ```http://127.0.0.1:8000/```
 
 Prerequisites for this are: **python**, **node.js**, **npm**
 
