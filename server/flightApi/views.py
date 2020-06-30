@@ -7,7 +7,7 @@ from .flightOptimizer import FlightOptimizer
 from rest_framework import generics 
 
 def index(request):
-    return render(request, 'build/index.html')
+    return render(request, 'index.html')
 
 @api_view(['GET'])
 def flight_info(request):
