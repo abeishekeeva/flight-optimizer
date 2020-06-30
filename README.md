@@ -54,10 +54,11 @@ To see the interface, go to https://flight-optimizer-react.herokuapp.com/
 
 To run this interface locally on your machine, do the following: 
 1. Clone the project.
-2. Create virtual environment. Go to ```server``` folder and install all python and django dependencies by running ```pip install -r requirements.txt```
-3. Go to ```react-client``` folder and install all node.js and react.js dependencies by running ```npm i```
-4. Build front-end part with ```npm run build```. 
-5. Go to ```server``` folder and run ```python manage.py runserver``` and head to ```http://127.0.0.1:8000/```
+2. Go to ```react-client``` folder and install all node.js and react.js dependencies by running ```npm i```
+3. Build front-end part with ```npm run build```. 
+4. Create virtual environment. 
+5. Go to ```server``` folder and install all python and django dependencies by running ```pip install -r requirements.txt```
+6. Run ```python manage.py runserver``` and head to ```http://127.0.0.1:8000/```
 
 Prerequisites for this are: **python**, **node.js**, **npm**
 
